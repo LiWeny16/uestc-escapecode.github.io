@@ -1,2 +1,9 @@
-# uestc-escapecode
-uestc/jinxiaoma
+## 如你所见😀
+
+ 这是UESTC的模拟进校码  
+ 参考：**https://gitee.com/koorye/uestc-escape.github.io?_from=gitee_search**  
+  <br>  **如使用请您遵循以下准则**:  
+  1. 当且仅当**紧急情况**，如：找不到辅导员,又必须紧急进入，才可以使用！  
+  2. 疫情期间，必须遵守校规，不可滥用  
+  3. 不可以大范围转发，自用即可 
+  4. **网页仅供学习交流使用**
