@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta http-equiv="Cache" content="no-cache" />
+    <link
+      href="https://fonts.loli.net/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>平安成电智慧通行</title>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+    <meta name="theme-color" content="#00C4A4" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="平安成电智慧通行" />
+    <meta name=msapplication-TileImage content=/img/icons/ico.png>
+    <meta name="msapplication-TileColor" content="#000000" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #fafafa;
+      }
+
+      .main {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0.137255) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0.117647) 0px 0px 0px 0px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 1);
+        padding-bottom: 8px;
+        padding-top: 32px;
+      }
+
+      .header {
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.870588);
+        border-left-color: rgba(0, 0, 0, 0.870588);
+        border-right-color: rgba(0, 0, 0, 0.870588);
+        border-top-color: rgba(0, 0, 0, 0.870588);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        color: rgba(0, 0, 0, 0.870588);
+        display: flex;
+        flex-wrap: wrap;
+        height: 68px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+      }
+
+      .header-text {
+        background-color: transparent;
+        color: #080;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        height: 36px;
+        text-align: justify;
+      }
+
+      .v-divider {
+        -webkit-box-flex: 1;
+        background-color: transparent;
+        border-top-color: rgba(0, 0, 0, 0.117647);
+        border-top-style: solid;
+        border-top-width: 1px;
+        color: rgba(0, 0, 0, 0.870588);
+        display: block;
+        flex-basis: 0px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 1px;
+        max-height: 0px;
+        max-width: 100%;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 1);
+      }
+
+      .v-list {
+        background-color: transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.870588);
+        border-left-color: rgba(0, 0, 0, 0.870588);
+        border-right-color: rgba(0, 0, 0, 0.870588);
+        border-top-color: rgba(0, 0, 0, 0.870588);
+        color: rgba(0, 0, 0, 0.870588);
+        display: block;
+        height: 48px;
+      }
+
+      .listitem {
+        display: flex;
+        margin-top: 16px;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .layout {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+      }
+
+      * {
+        font-family: Roboto, "Noto Sans S Chinese", PingFangSC,
+          "Microsoft YaHei", sans-serif;
+      }
+
+      .marquee {
+        /*    margin: 2rem 0; */
+        overflow: hidden;
+      }
+
+      .marquee span {
+        display: inline-block;
+        white-space: nowrap;
+        --tw: 11.2em;
+        --ad: 6s;
+        color: #00c4a4;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor,
+          calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor,
+          calc(var(--tw) * 4) 0 currentColor;
+
+        will-change: transform;
+        animation: marquee var(--ad) linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      #nav-to-qr {
+        margin-top: 2rem;
+        color: white;
+        background-color: #01bc9a;
+        border-radius: 2px;
+        padding: 0.5rem 0.8rem;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 3px 3px 0 gray;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .logo {
+        height: 60px;
+        width: 60px;
+        align-self: center;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript
+      ><strong>请在您的浏览器启用JavaScript以正常使用系统</strong>
+      <strong
+        >We're sorry but This system doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app" class="v-sheet--tile"></div>
+    <div class="main">
+      <div class="header">
+        <span class="header-text" id="pass-type"
+          >研究生用户，入校授权有效！</span
+        >
+      </div>
+      <hr class="v-divider theme--light" />
+
+      <div class="listitem">
+        <div class="layout">
+          <i class="material-icons" style="color: #757575">person</i>
+          <div style="margin-left: 8px">用户姓名</div>
+        </div>
+        <h2 id="name"></h2>
+      </div>
+      <div class="listitem">
+        <div class="layout">
+          <i class="material-icons" style="color: #757575">group</i>
+          <div style="margin-left: 8px">登记类型</div>
+        </div>
+        <h2 id="degree">研究生（硕士）</h2>
+      </div>
+      <div class="listitem">
+        <div class="layout">
+          <i class="material-icons" style="color: #757575">timer</i>
+          <div style="margin-left: 8px">登记时间</div>
+        </div>
+        <h3 class="marquee" style="width: 180px">
+          <span id="time">2020-06-01 18:58:10</span>
+        </h3>
+      </div>
+      <button id="nav-to-qr">前往个人二维码</button>
+      <image class="logo" src="icon.jpeg" />
+    </div>
+    <script>
+      yourName=prompt("聪花让你先输名字捏",'吴彦祖')
+      yourDegree=prompt("聪花让你后输学位捏",'请填:本科生/研究生/博士生')
+      if(yourDegree == "本科生"){
+        document.getElementById("pass-type").innerText="本科用户，入校授权有效！"
+        document.getElementById("degree").innerText=`本科生`
+      }
+      else if(yourDegree == "研究生"){
+        document.getElementById("pass-type").innerText="研究生用户，入校授权有效！"
+        document.getElementById("degree").innerText=`研究生（硕士）`
+        document.getElementById("degree").style.transform="translate(24px,0px)"
+     }
+     else if(yourDegree == "博士生"){
+        document.getElementById("pass-type").innerText="研究生用户，入校授权有效！"
+        document.getElementById("degree").innerText=`研究生（博士）`
+        document.getElementById("degree").style.transform="translate(24px,0px)"
+     }
+     else{
+      alert("填错了，再来")
+      location.reload(true)
+     }
+     document.getElementById("nav-to-qr").onclick=function(){alert("点我干啥，傻瓜")}
+ 
+      document.getElementById("name").innerText=`${yourName}`
+      
+      window.onload = () => {
+        const time = document.getElementById("time");
+        time.innerText = now();
+        const params = new URLSearchParams(window.location.search);
+        // const name = params.get("name");
+        // const type = params.get("type");
+        // if (type === 'out') {
+        //   const typeField = document.getElementById('pass-type');
+        //   typeField.innerHTML = '研究生用户，出校登记成功！';
+        // }
+        // const degree = params.get("degree");
+        // if (degree === "phd") {
+        //   const degreeField = document.getElementById("degree");
+        //   degreeField.innerHTML = "研究生（博士）";
+        // }
+        // if (!name) return;
+        // const nameElement = document.getElementById("name");
+        // nameElement.innerText = name;
+      };
+      const now = () => {
+        const now = new Date();
+        const offsetMs = now.getTimezoneOffset() * 60 * 1000;
+        const dateLocal = new Date(now.getTime() - offsetMs);
+        return dateLocal.toISOString().slice(0, 19).replace("T", " ");
+      };
+    </script>
+  </body>
+</html>
