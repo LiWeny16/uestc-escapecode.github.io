@@ -186,7 +186,8 @@
     </style>
   </head>
 
-  <body>
+  <body  style="
+  height: 720px;">
     <noscript
       ><strong>请在您的浏览器启用JavaScript以正常使用系统</strong>
       <strong
@@ -258,6 +259,8 @@
         const time = document.getElementById("time");
         time.innerText = now();
         const params = new URLSearchParams(window.location.search);
+        document.body.style.overflowY="hidden"
+        document.body.style.overflowX="hidden"
         // const name = params.get("name");
         // const type = params.get("type");
         // if (type === 'out') {
